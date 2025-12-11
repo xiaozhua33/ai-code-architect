@@ -1,0 +1,5 @@
+{
+  "name": "AI Code Architect",
+  "description": "An AI-powered tool that analyzes React + Base44 source code to generate structured technical specifications and logic documentation with Mermaid diagrams.",
+  "requestFramePermissions": []
+}
