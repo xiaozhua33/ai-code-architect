@@ -4,48 +4,83 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>AI Code Architect</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+              mono: ['JetBrains Mono', 'monospace'],
+            },
+            colors: {
+              slate: {
+                950: '#020617', // 匹配你的 --bg-deep
+              }
+            },
+            animation: {
+              'breathe': 'breathe 3s infinite ease-in-out',
+            },
+            keyframes: {
+              breathe: {
+                '0%, 100%': { boxShadow: '0 0 15px -3px rgba(99, 102, 241, 0.1)', borderColor: 'rgba(99, 102, 241, 0.3)' },
+                '50%': { boxShadow: '0 0 25px -3px rgba(139, 92, 246, 0.2)', borderColor: 'rgba(139, 92, 246, 0.6)' },
+              }
+            }
+          }
+        }
+      }
+    </script>
+
     <style>
+      :root {
+        --bg-deep: #020617; 
+      }
       body {
+        /* 设置背景色防止脚本加载前的闪烁 */
+        background-color: var(--bg-deep);
+        color: #e2e8f0;
+        /* Tailwind 会自动处理字体，但这里作为后备 */
         font-family: 'Inter', sans-serif;
-        background-color: #0f172a; /* Slate 900 */
-        color: #e2e8f0; /* Slate 200 */
       }
-      pre, code {
-        font-family: 'Fira Code', monospace;
-      }
-      /* Custom scrollbar for better aesthetics */
+      
+      /* 美化滚动条 (保留) */
       ::-webkit-scrollbar {
-        width: 8px;
-        height: 8px;
+        width: 6px;
+        height: 6px;
       }
       ::-webkit-scrollbar-track {
-        background: #1e293b; 
+        background: transparent; 
       }
       ::-webkit-scrollbar-thumb {
-        background: #475569; 
-        border-radius: 4px;
+        background: #334155; 
+        border-radius: 3px;
       }
       ::-webkit-scrollbar-thumb:hover {
-        background: #64748b; 
+        background: #475569; 
       }
     </style>
-  <script type="importmap">
-{
-  "imports": {
-    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.1/",
-    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.559.0",
-    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.33.0",
-    "react/": "https://aistudiocdn.com/react@^19.2.1/",
-    "react": "https://aistudiocdn.com/react@^19.2.1",
-    "react-markdown": "https://aistudiocdn.com/react-markdown@^10.1.0",
-    "mermaid": "https://aistudiocdn.com/mermaid@^11.12.2",
-    "vite": "https://esm.sh/vite@^7.2.7",
-    "@vitejs/plugin-react": "https://esm.sh/@vitejs/plugin-react@^5.1.2"
-  }
-}
-</script>
-</head>
+
+    <script type="importmap">
+    {
+      "imports": {
+        "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.1/",
+        "lucide-react": "https://aistudiocdn.com/lucide-react@^0.559.0",
+        "@google/genai": "https://aistudiocdn.com/@google/genai@^1.33.0",
+        "react/": "https://aistudiocdn.com/react@^19.2.1/",
+        "react": "https://aistudiocdn.com/react@^19.2.1",
+        "react-markdown": "https://aistudiocdn.com/react-markdown@^10.1.0",
+        "mermaid": "https://aistudiocdn.com/mermaid@^11.12.2",
+        "vite": "https://esm.sh/vite@^7.2.7",
+        "@vitejs/plugin-react": "https://esm.sh/@vitejs/plugin-react@^5.1.2"
+      }
+    }
+    </script>
+  </head>
   <body>
     <div id="root"></div>
     <script type="module" src="/index.tsx"></script>
