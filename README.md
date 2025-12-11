@@ -1,20 +1,55 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# AI Code Architect
 
-# Run and deploy your AI Studio app
+### Turn Code into Architecture | 让代码转化为架构
 
-This contains everything you need to run your app locally.
+> **Powered by Gemini 3.0 Pro & 1.5 Pro**
 
-View your app in AI Studio: https://ai.studio/apps/drive/17xLq2UhSkYJEX3_Yc-jwLy7W6e4poa6x
+## 🎯 痛点与解决方案 (The Problem & Solution)
 
-## Run Locally
+当你面对一个复杂的、陌生的、或者是两周前写完自己都忘了的\*\*“屎山”代码库\*\*时，AI Code Architect 是你的救星。
 
-**Prerequisites:**  Node.js
+它不仅仅是一个代码阅读器，而是一个**智能架构师**。它不只是“看”代码，而是“理解”代码背后的意图。
 
+-----
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+## 🚀 核心功能 (Core Features)
+
+### 1\. 👁️ 上帝视角：从源码到规格书 (God Mode)
+
+  * **一键生成报告**：自动产出包含 **Mermaid 架构图**（类图、时序图、流程图）、**数据字典**和**核心业务逻辑**的完整《技术架构与代码审计报告》。
+  * **可视化架构**：让晦涩的逻辑瞬间变成清晰的图表，大局观尽收眼底。
+
+### 2\. 🩺 深度体检：理解代码意图 (Deep Audit & Intent)
+
+  * **超越语法分析**：不同于传统工具只画引用线，它能理解**业务逻辑**。
+  * **自动审计**：自动扫描并指出代码中的**硬编码数值 (Magic Numbers)**、**经济系统漏洞**和**潜在逻辑风险**。
+
+### 3\. 💬 精准对话："看" + "问" + "改" (Interactive Chat)
+
+  * **双重上下文**：基于 AI 生成的《规格书》与《源代码》进行双重上下文检索。
+  * **交互式重构**：不仅能回答“这是什么”，还能回答“怎么改”。在对话框中直接获取重构建议和优化后的代码片段。
+
+### 4\. 🔒 安全隐私：BYOK 模式 (Security)
+
+  * **Bring Your Own Key**：支持用户输入自己的 Google API Key。
+  * **本地存储**：密钥仅加密存储在本地浏览器 (Local Storage)，**绝不上传**到我们的服务器，保障资产安全。
+
+-----
+
+## 💡 为什么我们不同？(Why AI Code Architect?)
+
+大多数 AI 编程工具只是“局部优化”，而我们提供“全局视野”。
+
+| 维度 | 🛠️ 传统工具 / 通用 ChatBot | 🧠 AI Code Architect |
+| :--- | :--- | :--- |
+| **处理流程** | 提问 -\> 检索零散片段 -\> 拼凑回答 | **通读全案 -\> 产出架构报告 -\> 基于报告精准回答** |
+| **回答质量** | 容易产生幻觉，缺乏大局观，不知道 A 模块影响了 B 模块 | **有据可依，基于全局依赖关系进行推理，大幅减少幻觉** |
+| **可视化** | 无法生成或仅生成简单的文本 | **自动绘制 Mermaid 图表，直观展示系统脉络** |
+
+-----
+
+## ⚙️ 快速开始 (Quick Start)
+
+1.  **准备密钥**：在 Google AI Studio 中创建一个关联付费结算（Pay-as-you-go）的项目（如 `AI-Architect-Pro`）并获取 Key。
+2.  **设置密钥**：点击界面左上角的 `Set API Key`，填入你的密钥。
+3.  **上传分析**：将你的代码文件夹拖入主界面，开始架构分析之旅！
