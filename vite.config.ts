@@ -10,7 +10,6 @@ export default defineConfig({
     minify: 'esbuild',
   },
   server: {
-    // Ensure we don't bind to specific hosts that might cause issues in cloud environments
     host: true, 
   }
 })
