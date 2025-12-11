@@ -1,20 +1,43 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# 🤖 AI Code Architect (AI 代码架构师)
 
-# Run and deploy your AI Studio app
+**Deep Spec Generation & Context-Aware Chat**
+(深度规格书生成 & 上下文感知对话)
 
-This contains everything you need to run your app locally.
+> 一个基于 Google Gemini 2.0 Thinking 模型的智能代码审计与架构分析工具。
 
-View your app in AI Studio: https://ai.studio/apps/drive/17xLq2UhSkYJEX3_Yc-jwLy7W6e4poa6x
+![Project Screenshot](此处可以以后放一张你的运行截图)
 
-## Run Locally
+## 🚀 核心功能
+当你面对一个复杂的、陌生的、或者是两周前写完自己都忘了的“屎山”代码库时：
 
-**Prerequisites:**  Node.js
+1. **上帝视角**：一键生成包含架构图、数据字典和核心业务逻辑的《**技术架构与代码审计报告**》。
+2. **深度体检**：自动审计代码中的**硬编码数值 (Magic Numbers)**、经济系统漏洞和潜在逻辑风险。
+3. **精准对话**：基于这份“规格书”与源码进行双重上下文对话。
+4. * **安全隐私**: 支持 BYOK (Bring Your Own Key) 模式，API Key 仅存储在本地浏览器，不上传服务器。
+
+**💡 为什么我们不同？**
+
+- **传统工具**：提问 -> 检索零散片段 -> 拼凑回答（容易产生幻觉，缺乏大局观）。
+- **🤖 AI Code Architect**：上传 -> AI 像人类架构师一样通读全案 -> **产出《技术架构与代码审计报告》** -> 基于规格书+源码回答（精准、有据可依）。
 
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+## 📦 如何使用
+
+1.  访问在线版本: [点击这里使用](https://ai-code-architect.vercel.app) (这里填你 Vercel 部署后的网址)
+2.  点击右上角 "Set API Key" 输入你的 Google Gemini Key。
+3.  拖入你的代码文件夹即可开始分析。
+
+## 🛠️ 本地运行
+
+1.  克隆仓库:
+    ```bash
+    git clone [https://github.com/xiaozhua33/ai-code-architect.git](https://github.com/xiaozhua33/ai-code-architect.git)
+    ```
+2.  安装依赖:
+    ```bash
+    npm install
+    ```
+3.  启动项目:
+    ```bash
+    npm run dev
+    ```
