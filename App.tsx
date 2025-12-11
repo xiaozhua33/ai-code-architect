@@ -222,7 +222,7 @@ function App() {
             Turn Code into <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-purple-400">Architecture</span>
           </h2>
           <p className="text-slate-400 text-lg leading-relaxed max-w-lg mx-auto">
-            Upload your React project. Get instant Mermaid diagrams, logic flows, and technical specs powered by Gemini 3.0.
+            Upload your project. Get instant Mermaid diagrams, logic flows, and technical specs powered by Gemini 3.0.
           </p>
         </div>
 
